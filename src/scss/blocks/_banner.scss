@@ -16,6 +16,7 @@
    
    &__body {
       padding-bottom: 165px;
+      padding-left: 14px;
       @include adaptiveValue('padding-top', 106, 56);
       position: relative;
       @media (max-width: 1024px) {
