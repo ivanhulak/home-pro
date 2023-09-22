@@ -1,0 +1,161 @@
+.how {
+   padding: 156px 0px;
+
+   @media (max-width: 1600px) {
+      padding: 140px 40px;
+   }
+
+   @media (max-width: 1200px) {
+      padding: 100px 40px;
+   }
+
+   @media (max-width: 768px) {
+      padding: 70px 40px;
+   }
+
+   @media (max-width: 425px) {
+      padding: 40px;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 88px;
+      align-items: center;
+
+      @media (max-width: 1600px) {
+         gap: 50px;
+      }
+
+      @media (max-width: 1300px) {
+         grid-template-columns: 1fr;
+         justify-items: center;
+         gap: 40px;
+      }
+
+      @media (max-width: 768px) {
+         gap: 25px;
+      }
+   }
+
+   &__title {
+      max-width: 395px;
+      margin-bottom: 60px;
+
+      @media (max-width: 1300px) {
+         max-width: unset;
+         text-align: center;
+         margin-bottom: 40px;
+      }
+
+      @media (max-width: 768px) {
+         margin-bottom: 25px;
+      }
+   }
+
+   &__row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 52px;
+
+      @media (max-width: 768px) {
+         gap: 24px;
+      }
+   }
+
+   &__image {
+      position: relative;
+
+      @media (max-width: 1600px) {
+         width: 641px;
+      }
+
+      @media (max-width: 768px) {
+         width: 100%;
+      }
+
+      &:after {
+         content: '';
+         position: absolute;
+         left: -6%;
+         bottom: 0;
+         width: 95%;
+         height: 76.6%;
+         background: url('../img/how/worker.png') 0 0/100% no-repeat;
+         @media (max-width: 768px) {
+            height: 86.6%;
+         }
+      }
+   }
+
+   &__image--inner {
+      position: relative;
+      padding: 48%;
+      border-radius: 32px 200px 32px 32px;
+      overflow: hidden;
+      @media (max-width: 768px){
+         border-radius: 13.8px 43.125px 13.8px 13.8px;
+         padding: 42%;
+      }
+
+      img {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      &:after {
+         content: '';
+         position: absolute;
+         right: 11.8%;
+         bottom: 45%;
+         width: 23.4%;
+         height: 24.3%;
+         background: url('../img/how/icon.svg') 0 0/100% no-repeat;
+      }
+   }
+}
+
+.item-how {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+
+      @media (max-width: 768px) {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         row-gap: 12px;
+      }
+   }
+
+   &__number {
+      color: var(--neutural-grey-3);
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 123%;
+      flex: 0 0 50px;
+   }
+
+   &__pross {
+      color: var(--neutural-black);
+      font-size: 24px;
+      @include adaptiveValue('font-size', 24, 20);
+      font-weight: 700;
+      line-height: 133.3%;
+      flex: 0 0 164px;
+
+      @media (max-width: 768px) {
+         font-weight: 600;
+      }
+   }
+
+   &__desc {
+      color: var(--neutural-grey-1);
+      font-size: 18px;
+      line-height: 155.5%;
+   }
+}

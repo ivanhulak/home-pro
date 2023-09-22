@@ -1,0 +1,106 @@
+.faq {
+   padding-right: 14px;
+   padding-left: 14px;
+   @include adaptiveValue('padding-top', 190, 32);
+   @include adaptiveValue('padding-bottom', 190, 32);
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr minmax(auto, 833px);
+      gap: 100px;
+      @media (max-width: 1400px){
+         grid-template-columns: 1fr minmax(auto, 700px);
+      }
+      @media (max-width: 1200px) {
+         grid-template-columns: 1fr;
+         gap: 34px;
+      }
+   }
+
+   &__title {
+      @include adaptiveValue('margin-bottom', 24, 16);
+   }
+
+   &__help {
+      &-needhelp {
+         display: inline-block;
+         color: var(--neutural-black);
+         @include adaptiveValue('font-size', 20, 18);
+         @include adaptiveValue('line-height', 32, 28);
+         margin-right: 12px;
+      }
+
+      &-link {
+         display: inline-block;
+         color: var(--primary-sky-blue);
+         font-weight: 700;
+         @include adaptiveValue('font-size', 24, 18);
+         @include adaptiveValue('line-height', 32, 24);
+
+         @media (max-width: 768px) {
+            font-weight: 600;
+         }
+      }
+   }
+
+   &__questions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+   }
+
+   &__question {
+      cursor: pointer;
+      position: relative;
+      padding: 24px 32px 0px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+
+      &--active {
+         padding-bottom: 32px;
+         background: var(--neutural-light-grey);
+         .faq__arrow-btn{
+            transition: all 0.3s ease;
+            transform: rotate(180deg);
+         }
+      }
+
+      &:hover {
+         background: var(--neutural-light-grey);
+      }
+   }
+
+   &__arrow-btn {
+      transition: all 0.3s ease;
+      position: absolute;
+      right: 32px;
+      top: 24px;
+      width: 32px;
+      height: 32px;
+      background: url('../img/icons/arrow-down.svg') 0 0/cover no-repeat;
+   }
+
+   &__accordion {
+      color: var(--neutural-grey-1);
+      padding-right: 30px;
+      @include adaptiveValue('font-size', 24, 18);
+      @include adaptiveValue('line-height', 32, 24);
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      @media (max-width: 768px) {
+         font-weight: 600;
+      }
+   }
+
+   &__pannel {
+      overflow: hidden;
+      color: #737373;
+      max-height: 0;
+      padding-right: 32px;
+      @include adaptiveValue('margin-top', 16, 24);
+      @include adaptiveValue('font-size', 16, 18);
+      @include adaptiveValue('line-height', 24, 28);
+      transition: max-height 0.3s ease-out;
+   }
+}

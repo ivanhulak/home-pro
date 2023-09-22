@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:regular);
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--neutural-white);
+	color: var(--neutural-black);
+	font-family: var(--font-main);
+}
+
+.wrapper {
+	transition: all 0.3s ease;
+}
+
+
+$maxWidth: 1920;
+
+@mixin adaptiveValue($property, $startSize, $minSize) {
+	$addSize: $startSize - $minSize;
+	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+}
+
+.title-1 {
+	color: var(--neutural-white, #FFF);
+	font-weight: 800;
+	line-height: 1.18;
+	@include adaptiveValue('font-size', 64, 32);
+
+	@media (max-height: 365px) {
+		font-size: 24px;
+	}
+}
+
+.title-2 {
+	color: var(--neutural-black);
+	@include adaptiveValue('font-size', 52, 24);
+	font-weight: 700;
+	line-height: 123%;
+}
+
+.grey-text-1 {
+	color: var(--neutural-grey-1);
+	font-size: 18px;
+	line-height: 155.5%;
+}
+
+.pross {
+	display: flex;
+	justify-content: center;
+	gap: 41px;
+	margin-bottom: 24px;
+
+	li {
+		padding-left: 32px;
+		color: var(--primary-sky-blue);
+		@include adaptiveValue('font-size', 20, 14);
+		line-height: 160%;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 1px;
+			width: 24px;
+			height: 24px;
+			background: url('../img/icons/done-icon.svg') 0 0 no-repeat;
+		}
+	}
+}
+
+.recall-btn {
+	border-radius: 60px;
+	background: var(--primary-sky-blue, #15B2F5);
+	padding: 16px 72px 16px 24px;
+	@include adaptiveValue('height', 64, 48);
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+
+	span {
+		@include adaptiveValue('font-size', 24, 18);
+		font-weight: 700;
+		line-height: 133.3%;
+		color: var(--neutural-white, #FFF);
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		@include adaptiveValue('width', 48, 32);
+		@include adaptiveValue('height', 48, 32);
+		border-radius: 50%;
+		background: var(--neutural-white) url('../img/icons/phone-icon.svg') 50% 50% no-repeat;
+	}
+
+	&:hover {
+		border: 1px solid var(--primary-sky-blue);
+		background: var(--page-bg-dark-blue);
+	}
+}

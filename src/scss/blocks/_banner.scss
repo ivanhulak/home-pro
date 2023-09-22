@@ -1,0 +1,84 @@
+.banner {
+   background: var(--page-bg-dark-blue) url('../img/banner/banner.png') right 0/contain no-repeat;
+
+   @media (max-width: 1300px) {
+      background-position: right bottom;
+      background-size: 65%;
+   }
+
+   @media (max-width: 1200px) {
+      background-size: 58%;
+   }
+
+   @media (max-width: 1024px) {
+      background-image: none;
+   }
+   
+   &__body {
+      padding-bottom: 165px;
+      @include adaptiveValue('padding-top', 106, 56);
+      position: relative;
+      @media (max-width: 1024px) {
+         padding-bottom: 0;
+      }
+
+      &:before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: -1px;
+         clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
+         background: var(--neutural-white);
+         width: 30%;
+         @include adaptiveValue('height', 33, 20);
+         @media (max-width: 1024px){
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
+   }
+
+   &__content {
+      max-width: 662px;
+
+      @media (max-width: 1024px) {
+         max-width: 95%;
+         margin: 0 auto;
+         text-align: center;
+      }
+   }
+
+   &__title {
+      margin-bottom: 24px;
+   }
+
+   &__pross {
+      @include adaptiveValue('margin-bottom', 36, 24);
+      justify-content: flex-start;
+      @media (max-width: 1024px) {
+         justify-content: center;
+      }
+      @media (max-width: 475px) {
+         // flex-direction: column;
+         gap: 10px;
+         // text-align: left;
+      }
+   }
+}
+.banner-continue{
+   @media (max-width: 1024px){
+      width: 100vw;
+      height: 500px;
+      background: var(--page-bg-dark-blue) url('../img/banner/banner-small.png') left bottom/contain no-repeat;
+   }
+   @media (max-width: 768px){
+      height: 400px;
+   }
+   @media (max-width: 475px){
+      height: 300px;
+   }
+   @media (max-width: 375px){
+      height: 250px;
+   }
+}
