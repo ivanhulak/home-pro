@@ -1,0 +1,37 @@
+[
+   {
+      "image": "01.svg",
+      "name": "Plumbing services",
+      "text": "Drain pipe leaking, pipe clogged, replace the pipe line"
+   },
+   {
+      "image": "02.svg",
+      "name": "Roofing repair",
+      "text": "Roof leaks, tile replacement, roof cleaning and maintenance"
+   },
+   {
+      "image": "03.svg",
+      "name": "Mold Removal",
+      "text": "Removing and cleaning mildew, Restoration and Prevention"
+   },
+   {
+      "image": "04.svg",
+      "name": "Tree Trimming",
+      "text": "Trimming and cleaning, Deadwood removal, Tree shaping"
+   },
+   {
+      "image": "05.svg",
+      "name": "Appliance Repair",
+      "text": "repair of washing machines, refrigerators, Air conditioner, etc"
+   },
+   {
+      "image": "06.svg",
+      "name": "Bathroom Remodeling",
+      "text": "Design and Consulting, installation, Repairing, tile repair"
+   },
+   {
+      "image": "07.svg",
+      "name": "Locksmith",
+      "text": "Lock Installation and Repair, Duplication, Lock Rekeying"
+   }
+]

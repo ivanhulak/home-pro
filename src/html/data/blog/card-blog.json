@@ -1,0 +1,35 @@
+[
+   {
+      "image": "01.jpg",
+      "date": "19 Jan 2023",
+      "name": "Understanding Smart Home Systems & Maintenance",
+      "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+      "tags": [
+         {"tag": "Plumbing"},
+         {"tag": "Architecture"},
+         {"tag": "Maintenance"}
+      ]
+   },
+   {
+      "image": "02.jpg",
+      "date": "19 Jan 2023",
+      "name": "The Ultimate Guide to Home Repairs and Renovations",
+      "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+      "tags": [
+         {"tag": "Plumbing"},
+         {"tag": "Architecture"},
+         {"tag": "Maintenance"}
+      ]
+   },
+   {
+      "image": "03.jpg",
+      "date": "19 Jan 2023",
+      "name": "Painting Techniques for a Kitchen Refresh",
+      "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+      "tags": [
+         {"tag": "Plumbing"},
+         {"tag": "Architecture"},
+         {"tag": "Maintenance"}
+      ]
+   }
+]
