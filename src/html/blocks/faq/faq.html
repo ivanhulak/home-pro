@@ -1,0 +1,18 @@
+<section class="faq">
+   <div class="container">
+      <div class="faq__body">
+         <div class="faq__grid">
+            <div class="faq__info">
+               <div class="faq__title title-2">Frequently Asked Questions</div>
+               <div class="faq__help">
+                  <span class="faq__help-needhelp">Still need help?</span>
+                  <a href="#!" class="faq__help-link">Get Help Now</a>
+               </div>
+            </div>
+            <div class="faq__questions">
+               @@loop('./faq-question.html', './data/faq/faq-question.json')
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

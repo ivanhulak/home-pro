@@ -1,0 +1,18 @@
+<div class="blog__card card-blog">
+   <div class="card-blog__inner">
+      <div class="card-blog__image">
+         <img src="./img/blog/@@image" alt="@@image">
+      </div>
+      <div class="card-blog__content">
+         <div class="card-blog__date grey-text-1">@@date</div>
+         <div class="card-blog__name">@@name</div>
+         <div class="card-blog__text grey-text-1">@@text</div>
+         <div class="card-blog__more-btn">more</div>
+      </div>
+      <ul class="card-blog__tags-row">
+         @@for (var i = 0; i < tags.length; i++) { 
+            @@include('card-blog__tags-item.html', `+(JSON.stringify(tags[i]))+`)
+         } 
+      </ul>
+   </div>
+</div>
